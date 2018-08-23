@@ -1,0 +1,49 @@
+client service is listening on port 9001
+room service is listening on localhost:9002
+game server is listening on localhost:9003
+account server is listening on 9000
+dealer api is listening on localhost:12581
+game server is listening on 10000
+game server registered.
+	id:127.0.0.1:10000
+	addr:127.0.0.1
+	http port:9003
+	socket clientport:10000
+127.0.0.1:10000
+5f07171cb498d75fd82ecd0de85df3a9
+invalid parameters
+东郭赌侠
+INSERT INTO t_users(userid,account,name,coins,gems,sex,headimg) VALUES("171168", "guest_1534997719832","5Lic6YOt6LWM5L6g",1000,21,0,null)
+SELECT name,sex,headimg FROM t_users WHERE userid=171168
+{ type: 'xzdd',
+  baseScore: 1,
+  zimo: 0,
+  jiangdui: false,
+  hsz: true,
+  dianganghua: 0,
+  menqing: false,
+  tiandihu: false,
+  maxFan: 4,
+  maxGames: 4,
+  creator: 171168 }
+INSERT INTO t_rooms(uuid,id,base_info,ip,port,create_time)                 VALUES('1534997732423740551','740551','{"type":"xzdd","baseScore":1,"zimo":0,"jiangdui":false,"hsz":true,"dianganghua":0,"menqing":false,"tiandihu":false,"maxFan":4,"maxGames":4,"creator":171168}','127.0.0.1',10000,1534997733)
+1534997732423740551
+{ userid: '171168',
+  name: '东郭赌侠',
+  roomid: '740551',
+  sign: '003b70468a0fdbc2adc14af906a1ffc3' }
+003b70468a0fdbc2adc14af906a1ffc3
+{ token: '5c5778187420f718a17c193e621474b4',
+  errcode: 0,
+  errmsg: 'ok' }
+UPDATE t_users SET roomid = "740551" WHERE userid = "171168"
+740551
+5c5778187420f718a17c193e621474b4
+1534997732457
+300e5c72633c55373abd5b8d228842de
+22
+UPDATE t_users SET roomid = null WHERE userid = "171168"
+DELETE FROM t_rooms WHERE id = '740551'
+SELECT name,sex,headimg FROM t_users WHERE userid=171168
+SELECT name,sex,headimg FROM t_users WHERE userid=171168
+SELECT name,sex,headimg FROM t_users WHERE userid=171168
