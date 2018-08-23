@@ -47,3 +47,6 @@ DELETE FROM t_rooms WHERE id = '740551'
 SELECT name,sex,headimg FROM t_users WHERE userid=171168
 SELECT name,sex,headimg FROM t_users WHERE userid=171168
 SELECT name,sex,headimg FROM t_users WHERE userid=171168
+SELECT name,sex,headimg FROM t_users WHERE userid=171168
+problem with request: connect ECONNREFUSED 127.0.0.1:9002
+problem with request: connect ECONNREFUSED 127.0.0.1:9002
